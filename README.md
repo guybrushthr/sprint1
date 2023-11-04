@@ -1,18 +1,23 @@
-# Ejemplo básico de TS
+Simple To-Do-List to add tasks and mark them as done.
 
----
+Based on classes in Typescript
+Tested with jest
+Executable in HTML
+src/ toDoListDosClases.html is connected to toDoList.js (which does not include command "export" from toDoList.ts)
 
-En este ejemplo básico hay:
+Push to github automatically executes Jest in github actions.
 
-- ESLint
-- Prettier
-- ts-jest
-- nodemon
-- VSCode Debugging
-- Github Actions
-- Pequeño ejemplo de código funcional con import
+La configuración del debugger points to src/toDoList.ts
 
-La configuración del debugger apunta a src/index.ts como archivo de inicio del proyecto.
+Project based on this template: https://github.com/jclumbiarres/tsbasico
+
+ESLint
+Prettier
+ts-jest
+nodemon
+VSCode Debugging
+Github Actions
+with the following indications:
 
 Comandos:
 

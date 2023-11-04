@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</br>
+    <input type="text" id="myInputText" placeholder="Please write your task here."> </br> </br>
+    <button id="buttonAddToList" onclick="addTaskDOM()">Add to list</button> </br> </br>
+    <button id="buttonDeleteFromList" onclick="deleteTaskDOM()"> Delete from list</button> </br> </br>
+    <button id="buttonMarkAsDone" onclick="markAsDoneDOM()"> Mark task as done</button> </br> </br>
+    <button id="showList" onclick="showListDOM()"> Show List </button> </br> </br>
+    <h2 id="myToDoList"> </h2> </br> </br>
+    
+</body>
+
+<script src="toDoList.js"> </script>
+
+<script>
+
+const addTaskDOM = () => {
+    myToDoList.addTask(getInput());
+    document.getElementById("myInputText").value = ""
+}
+
+const deleteTaskDOM = () => {
+    myToDoList.deleteTask(getInput());
+    showListDOM()
+    document.getElementById("myInputText").value = ""
+} 
+
+const markAsDoneDOM = () => {
+    myToDoList.markAsDone(getInput());
+    showListDOM()
+    document.getElementById("myInputText").value = ""
+}
+
+const showListDOM = () => document.getElementById("myToDoList").innerHTML = myToDoList.showList();
+
+const getInput = () => document.getElementById("myInputText").value;
+
+</script>
+
+</html>
