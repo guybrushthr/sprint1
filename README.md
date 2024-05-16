@@ -1,4 +1,4 @@
-Simple To-Do-List to add tasks and mark them as done.
+Basic To-Do-List to add tasks and mark them as done.
 
 Based on classes in Typescript
 Tested with jest
